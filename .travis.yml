@@ -2,4 +2,5 @@ services:
   - docker
 
 script:
-  - docker build -t eduzen/nltk:base-$TRAVIS_BRANCH
+  - echo $TRAVIS_BRANCH
+  - docker build -t eduzen/nltk:base-$TRAVIS_BRANCH .
