@@ -10,6 +10,5 @@ RUN apk add --update --no-cache --virtual .build-deps \
         musl-dev
 
 RUN pip install -r requirements.txt
-RUN python -m nltk.downloader -d /usr/local/share/nltk_data all
 
 COPY . /code/
